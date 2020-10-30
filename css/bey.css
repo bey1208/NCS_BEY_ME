@@ -1,0 +1,97 @@
+
+.disNo{display: none}
+.Bing{ font-family: 'TmoneyRoundWindExtraBold' !important}
+body{font-family: 'TmoneyRoundWindRegular'}
+
+/* 상단바 패딩 */
+.navbar-fixed-top{padding:0; border:none}
+
+.navbar-inverse{background-color:rgba(225,225,225,.0) }
+.navbar-default, .navbar-inverse{ background-color:none; border:none;}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{background-color: none}
+
+/* 상단 네비 클릭 색상 */
+.navbar-inverse .navbar-nav > .active > a{background: none; color:black}
+.navbar-default .navbar-nav > li > a,
+ .navbar-inverse .navbar-nav > li > a{color:black}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus{background: none; color:black}
+
+/* 메인 텍스트 */
+#hd .intro-content img{margin-bottom:15px;}
+#hd .intro-content p{font-size: 12px; line-height: 1;
+width: 200px; margin:0 auto}
+
+
+/* 스크롤~다운 */
+.scrollDown {
+position: absolute;
+bottom: 0;
+left: 50%;
+width: 35px;
+height: 50px;
+border: 2px solid #fff;
+border-radius: 20px;
+transform: translateX(-50%);
+z-index: 1;
+display: none}
+
+.scrollDown .line {
+  position: absolute;
+  top: 5px;
+  left: 13px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  animation: aniMouse 1s ease-out infinite;
+display: none}
+
+.scroll-down:after{
+content: "";
+width: 1px;
+height: 25px;
+background: #fff;
+position: absolute;
+left: 50%;
+bottom: -20px;
+display: none
+}
+
+@keyframes aniMouse{
+  0%{top:5px;}
+  50%{top:12px;}
+  100%{top:5px;}
+}
+@-webkit-keyframes aniMouse{
+  0%{top:5px;}
+  50%{top:12px;}
+  100%{top:5px;}
+}
+
+@media (min-width:800px){
+.scrollDown{display: block}
+.scroll-down:after{display: block}
+.scrollDown .line{display: block}
+
+#hd .intro-content img{margin-bottom: 20px;}
+#hd .intro-content p{
+  font-size: 15px; line-height: 1;  width: auto}
+
+}
+
+/* 하나씩보기 백그라운드*/
+.portfolio-carousel{background-color: white;}
+
+/* 글자색 */
+.project-name {color:#2d3e7b}
+.project-description{color:black}
+.btn-outline-light{color:black; border:1px solid black}
+
+ /* 문자여백 */
+.portfolio-carousel > span{margin-top:5px;}
+.portfolio-carousel > a{margin-top:5px;}
